@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<<device-width>>, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/media.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="first-container">
+       <div class="sidebar">
+               
+            <div class="inner-container">
+          <div class="Balance-container">
+            <h3>Current balance</h3>
+            <p>$16,756.00</p>
+          </div>
+          <div class="nav-links"> 
+          <ul>
+
+            <li class="sidebar-info">
+              <a href="#" class="active">
+                <i class="fas fa-columns"  id="icons" ></i>
+                <span class="links_name">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-chart-pie" id="icons"></i>
+                <span class="links_name">Charts</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-server" id="icons"></i>
+                <span class="links_name">Networth</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-bitcoin" id="icons"></i>
+                <span class="links_name">Build Wealth</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-calendar-alt" id="icons"></i>
+                <span class="links_name">Calendar</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-comments" id="icons"></i>
+                <span class="links_name">Charts and message</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-address-card" id="icons"></i>
+                <span class="links_name">Profile</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-wallet" id="icons"></i>
+                <span class="links_name">Projects</span>
+              </a>
+            </li>
+            </ul>
+        </div>
+        </div> 
+        <div class="inner-container2">
+            <div class="report">
+                <p>PDF Report</p>
+                <h4>Download Monthly Report</h4>
+              
+            
+              <a href="#">
+                <span class="links_name" id="download"
+                  >Download <i class="fas fa-download"></i
+                ></span>
+              </a></div>
+           
+          <div class="tog">
+            <input type="checkbox" id="switch"
+                        class="checkbox" />
+            <label for="switch" class="toggle">
+            </label>
+            <p>all rights reserved</p>
+        </div>
+        </div>
+        
+       </div>
+       </div>
+
+<!-- Second container -->
+      <div class="second-container">
+        <!-- <div class="sidebar-button">
+            <i class='bx bx-menu sidebarBtn'></i> 
+          </div>  -->
+          <!-- <div class="toggle" onclick="toggleMenu();"></div> -->
+          
+        <div class="header">
+          <div class="header-first">
+            
+            <h1>Welcome</h1>
+            <h2>Overview</h2>
+          </div>
+
+          <div class="header-second">
+            <div class="notification">
+              <img
+                src="img/WhatsApp Image 2021-11-03 at 11.37.42 PM.jpeg"
+                alt="sfs"
+              />
+            </div>
+            <div class="profile-card">
+              <img src="img/IMG_6681.jpg" alt="sds" id="profile1" />
+              <h3>Ingredia Nutrisha</h3>
+              <img
+                src="img/WhatsApp Image 2021-11-03 at 11.37.41 PM.jpeg"
+                alt="sfs"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Grid section begins here -->
+        <div class="grid-container">
+
+            <!-- Grid-1 item1 -->
+          <div class="grid-item item1">
+            <i class="fab fa-cc-visa"></i>
+            <div class="star-rate">
+              <span
+                ><i class="far fa-star"></i> <i class="far fa-star"></i
+                ><i class="far fa-star"></i
+              ></span>
+              <span
+              ><i class="far fa-star"></i> <i class="far fa-star"></i
+              ><i class="far fa-star"></i
+            ></span>
+            <span
+            ><i class="far fa-star"></i> <i class="far fa-star"></i
+            ><i class="far fa-star"></i
+          ></span>
+              <span
+                ><i class="far fa-star"></i> <i class="far fa-star"></i
+                ><i class="far fa-star"></i
+              ></span>
+              <span
+                ><i class="far fa-star"></i> <i class="far fa-star"></i
+                ><i class="far fa-star"></i
+              ></span>
+              <span>4156</span>
+            </div>
+            <div class="card-info">
+              <h4>CARD HOLDER</h4>
+              <span>
+                <p>Kenneth Andrew</p>
+                <span>04/21</span></span
+              </div>
+            </div>
+          </div>
+          <!-- grid1 ends here -->
+
+
+          <!-- Grid2 item2 starts heere -->
+          <div class="grid-item item2">
+            <canvas id="myChart1"></canvas>
+          </div>
+
+           <!-- Grid3 item3 starts heere -->
+          <div class="grid-item item3">
+            <canvas id="myChart2"></canvas>
+           
+          </div>
+           <!-- Grid4 item4 starts heere -->
+          <div class="grid-item item4">
+            <div class="payment-history">
+              <h1>Payment History</h1>
+              <div class="payment-captions">
+                <img
+                  src="img/icons8-reload-64.png"
+                  alt="deposit card from atl"
+                />
+                <div class="payment-caption">
+                  <div>
+                    <p>Deposit from ATL</p>
+                    <h3>5 march,18:22</h3>
+                  </div>
+                  <div class="price">
+                    <p>-1,470</p>
+                    <p>USD</p>
+                  </div>
+                </div>
+              </div>
+              <div class="payment-captions">
+                <img
+                  src="img/icons8-paypal-48.png"
+                  alt="deposit card from atl"
+                />
+                <div class="payment-caption">
+                  <div>
+                    <p>Deposit paypal</p>
+                    <h3>5 march,18:22</h3>
+                  </div>
+                  <div class="price">
+                    <p>-1,470</p>
+                    <p>USD</p>
+                  </div>
+                </div>
+              </div>
+              <div class="payment-captions">
+                <img
+                  src="img/icons8-check-mark-48.png"
+                  alt="deposit card from atl"
+                />
+                <div class="payment-caption">
+                  <div>
+                    <p>Deposit from ATL</p>
+                    <h3>5 march,18:22</h3>
+                  </div>
+                  <div class="price">
+                    <p>-1,470</p>
+                    <p>USD</p>
+                  </div>
+                </div>
+              </div>
+              <div class="payment-captions">
+                <img
+                  src="/img/icons8-cross-mark-48.png"
+                  alt="deposit card from atl"
+                />
+                <div class="payment-caption">
+                  <div>
+                    <p>Cancelled</p>
+                    <ph35 march,18:22</p>
+                  </div>
+                  <div class="price">
+                    <p>-1,470</p>
+                    <p>USD</p>
+                  </div>
+                </div>
+              </div>
+              <div class="payment-captions">
+                <img
+               src="img/icons8-reply-arrow-48.png"
+                  alt="deposit card from atl"
+                />
+                <div class="payment-caption">
+                  <div class="price">
+                    <p>Refund</p>
+                    <h3>5 march,18:22</h3>
+                  </div>
+                  <div class="price">
+                    <p>-1,470</p>
+                    <p>USD</p>
+                  </div>
+                </div>
+              </div>
+              <div class="payment-captions">
+                <img
+                  src="img/icons8-reload-64.png"
+                  alt="deposit card from atl"
+                />
+                <div class="payment-caption">
+                  <div class="price">
+                    <p>Deposit from ATL</p>
+                    <h3>5 march,18:22</h3>
+                  </div>
+                  <div class="price">
+                    <p>-1,470</p>
+                    <p>USD</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- grid 4 ends here -->
+
+            <!-- grid5 item5 starts here -->
+          <div class="grid-item item5">
+            <!-- Table  -->
+            <table id="table" class="display">
+              <thead>
+                <p class="table-para">investments</p>
+                <tr>
+                  <th></th>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Amount</th>
+                  <th>Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>DC01</td>
+                  <td>Honey Wells</td>
+                  <td>$204.98</td>
+                  <td>24-11-2019</td>
+                </tr>
+
+                <tr class="tr-1">
+                  <td><input type="checkbox" /></td>
+                  <td>DC02</td>
+                  <td>Carl Construction</td>
+                  <td>$204.98</td>
+                  <td>24-11-2019</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>DC03</td>
+                  <td>Ronald & Reelves</td>
+                  <td>$204.98</td>
+                  <td>24-11-2019</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>DC04</td>
+                  <td>Halt HTD</td>
+                  <td>$204.98</td>
+                  <td>24-11-2019</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>DC05</td>
+                  <td>Pre-Sales</td>
+                  <td>$204.98</td>
+                  <td>24-11-2019</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>DC06</td>
+                  <td>Sales Assistant</td>
+                  <td>$204.98</td>
+                  <td>24-11-2019</td>
+                </tr>
+
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>DC07</td>
+                  <td>Secretary</td>
+                  <td>$204.98</td>
+                  <td>24-11-2019</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>DC08</td>
+                  <td>Financial Controller</td>
+                  <td>$204.98</td>
+                  <td>24-11-2019</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td>DC09</td>
+                  <td>Office Manager</td>
+                  <td>$204.98</td>
+                  <td>24-11-2019</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- Grid5 ends here -->
+
+           <!-- Grid6 item6 starts heere -->
+          <div class="grid-item item6">  
+              <div class="payment-history">
+                <h1>Monthly Profits</h1>
+              <div class="sphere-graph"><img src="/img/Screenshot 2021-11-05 at 02.02.20.png" class="chart-img" alt=""></div>
+           <div class="payment-date"> <p>12 july 2018</p><p>Amount</p></div>
+            <div class="Monthly-Profits">
+              <img
+                src="img/icons8-reload-64.png"
+                alt="deposit card from atl"
+              />
+              <div class="Monthly-Profit">
+                <div>
+                  <p>  <span class="span-card">Card </span> <span> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>  <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span> <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="span-card"> 5679</span</p>
+                  <h3>5 march,18:22</h3>
+                </div>
+                <div>
+                  <p>-1,470</p>
+                  <p>USD</p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="Monthly-Profits">
+                <img
+                  src="img/icons8-reload-64.png"
+                  alt="deposit card from atl"
+                />
+                <div class="Monthly-Profit">
+                  <div>
+                    <p>  <span class="span-card">Card </span> <span> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>  <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span> <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="span-card"> 5679</span</p>
+                    <h3>5 march,18:22</h3>
+                  </div>
+                  <div class="Monthly-text">
+                    <p>-1,470</p>
+                    <p>USD</p>
+                  </div>
+                </div>
+              </div>
+
+
+
+            <div class="Monthly-Profits">
+              <img
+                src="img/icons8-reload-64.png"
+                alt="deposit card from atl"
+              />
+              <div class="Monthly-Profit">
+                <div>
+                  <p>  <span class="span-card">Card </span> <span> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>  <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span> <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="span-card"> 5679</span</p>
+                  <h3>5 march,18:22</h3>
+                </div>
+                <div class="Monthly-text">
+                  <p>-1,470</p>
+                  <p>USD</p>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="Monthly-Profits">
+              <img
+                src="img/icons8-reload-64.png"
+                alt="deposit card from atl"
+              />
+              <div class="Monthly-Profit">
+                <div>
+                  <p>  <span class="span-card">Card </span> <span> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>  <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span> <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="span-card"> 5679</span</p>
+                  <h3>5 march,18:22</h3>
+                </div>
+                <div class="Monthly-text">
+                  <p>-1,470</p>
+                  <p>USD</p>
+                </div>
+              </div>
+            </div>
+
+
+
+             <div class="Monthly-Profits">
+              <img
+                src="img/icons8-reload-64.png"
+                alt="deposit card from atl"
+              />
+              <div class="Monthly-Profit">
+                <div>
+                  <p>  <span class="span-card">Card </span> <span> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>  <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span> <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="span-card"> 5679</span</p>
+                  <h3>5 march,18:22</h3>
+                </div>
+                <div class="Monthly-text">
+                  <p>-1,470</p>
+                  <p>USD</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="Monthly-Profits">
+              <img
+                src="img/icons8-reload-64.png"
+                alt="deposit card from atl"
+              />
+              <div class="Monthly-Profit">
+                <div>
+                  <p>  <span class="span-card">Card </span> <span> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>  <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span> <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span class="span-card"> 5679</span</p>
+                  <h3>5 march,18:22</h3>
+                </div>
+                <div class="Monthly-text">
+                  <p>-1,470</p>
+                  <p>USD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- grid 6 ends here -->
+
+
+        <!-- Item-7 -->
+          <div class="grid-item item7">
+            <p>Recent Reviews</p>
+            <div class="reviews">
+              <span><button>43</button> </span>
+              <span
+                class="fa fa-star checked"
+                style="font-size: 0.5rem; color: #ee6d2f"
+              ></span>
+              <span
+                class="fa fa-star checked"
+                style="font-size: 0.5rem; color: #ee6d2f"
+              ></span>
+              <span
+                class="fa fa-star checked"
+                style="font-size: 0.5rem; color: #ee6d2f"
+              ></span>
+              <span
+                class="fa fa-star checked"
+                style="font-size: 0.5rem; color: #ee6d2f"
+              ></span>
+              <span class="fa fa-star" style="font-size: 0.5rem"> </span>
+              <p><span> 360 reviews.</span></p>
+            </div>
+            <hr />
+
+            <!-- Review section -->
+            <div class="Reviews-info">
+              <img src="/img/IMG_6681.jpg" alt="img" />
+
+              <div class="Review-text">
+                <h4>Belle Bowen</h4>
+                <span
+                  class="fa fa-star checked"
+                  style="font-size: 0.5rem; color: #ee6d2f"
+                ></span>
+                <span
+                  class="fa fa-star checked"
+                  style="font-size: 0.5rem; color: #ee6d2f"
+                ></span>
+                <span
+                  class="fa fa-star checked"
+                  style="font-size: 0.5rem; color: #ee6d2f"
+                ></span>
+                <span class="fa fa-star" style="font-size: 0.5rem"> </span>
+                <span class="fa fa-star" style="font-size: 0.5rem"> </span>
+                <p>
+                  Now if you are interested in<br />
+                  been the best player,getting really good money and konwing
+                </p>
+                <span><i class="fas fa-reply"></i>Reply</span>
+              </div>
+            </div>
+
+            <!-- Review2 -->
+            <div class="Reviews-info">
+              <img src="/img/IMG_6681.jpg" alt="img" />
+
+              <div class="Review-text">
+                <h4>Belle Bowen</h4>
+                <span
+                  class="fa fa-star checked"
+                  style="font-size: 0.5rem; color: #ee6d2f"
+                ></span>
+                <span
+                  class="fa fa-star checked"
+                  style="font-size: 0.5rem; color: #ee6d2f"
+                ></span>
+                <span
+                  class="fa fa-star checked"
+                  style="font-size: 0.5rem; color: #ee6d2f"
+                ></span>
+                <span class="fa fa-star" style="font-size: 0.5rem"> </span>
+                <span class="fa fa-star" style="font-size: 0.5rem"> </span>
+                <p>
+                  Now if you are interested in<br />
+                  been the best player,getting really good money and konwing
+                </p>
+                <span><i class="fas fa-reply"></i>Reply</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+    <script src="/main.js"></script>
+  </body>
+</html>

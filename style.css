@@ -1,0 +1,491 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+.main-container {
+  display: flex;
+  width: 97%;
+  margin: auto;
+  gap: 2%;
+}
+
+.first-container {
+  display: flex;
+  height: auto;
+  width: auto;
+  flex: 1;
+  border-right: 1px solid rgb(226, 226, 226);
+  justify-content: center;
+}
+
+/*SIDEBAR CONTAINER */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 90%;
+  background: #fff;
+  transition: all 0.5s ease;
+}
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  gap: 6%;
+}
+.Balance-container {
+  height: 15%;
+  width: 100%;
+  background-image: linear-gradient(to right, #ee6d2f, #f38e31);
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0px 5px 10px rgba(252, 112, 31, 0.3);
+  margin-top: 2.3rem;
+}
+.Balance-container h3 {
+  font-size: 0.7rem;
+}
+.Balance-container p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.sidebar.active {
+  width: 100%;
+}
+.sidebar-info {
+  font-size: 0.2rem;
+}
+.nav-links {
+  font-size: 12px;
+  display: flex;
+
+  flex-direction: column;
+  height: 80%;
+}
+.nav-links ul {
+  padding: 8px;
+  width: 100%;
+}
+.nav-links ul li {
+  list-style-type: none;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.nav-links ul li a {
+  display: flex;
+  gap: 10px;
+  font-size: 10px;
+  font-weight: bold;
+  width: 100%;
+  transition: all 0.4s ease;
+
+  align-items: center;
+  text-decoration: none;
+  color: rgb(116, 116, 116);
+}
+
+.nav-links li a.active {
+  background: #fff;
+}
+/* .sidebar .nav-links li a:hover {
+  background: rgb(194, 193, 193);
+} */
+
+.sidebar .nav-links li a.active {
+  color: black;
+  font-size: bolder;
+}
+
+.inner-container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20%;
+}
+
+.report {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 45%;
+  padding-left: 10px;
+}
+.report p {
+  font-size: 10px;
+  color: rgb(70, 70, 70);
+}
+.report h4 {
+  font-size: 10px;
+  color: rgb(211, 211, 211);
+}
+.tog {
+  display: flex;
+  flex-direction: column;
+}
+.tog p {
+  font-size: 10px;
+  color: rgb(153, 153, 153);
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+/* toggle swicth */
+.toggle {
+  width: 45px;
+  height: 22px;
+  background-color: gray;
+  border-radius: 30px;
+}
+
+/* After slide changes */
+.toggle:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  top: 1px;
+  left: 1px;
+  transition: all 0.5s;
+}
+
+.checkbox:checked + .toggle::after {
+  left: 49px;
+}
+
+.checkbox:checked + .toggle {
+  background-color: gray;
+}
+
+.checkbox {
+  display: none;
+}
+#icons {
+  font-size: 0.7rem;
+}
+/* Download button */
+#download {
+  background-image: linear-gradient(to right, #dd7b7b, #b85050);
+  width: 100%;
+  border: none;
+  height: 50px;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.home-section {
+  position: relative;
+  background: #f5f5f5;
+  min-height: 100vh;
+  width: calc(100% - 240px);
+  left: 240px;
+  transition: all 0.5s ease;
+}
+.sidebar.active ~ .home-section {
+  width: calc(100% - 60px);
+  left: 60px;
+}
+
+.copywright {
+  padding-top: 30px;
+  font-size: 0.7rem;
+}
+
+/* .sidebar-button i {
+  font-size: 25px;
+  margin-right: 10px;
+} */
+
+/* Second container starts here */
+.second-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 6;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.header-first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 18%;
+}
+.header-first h1 {
+  font-size: 18px;
+}
+.header-first h2 {
+  font-size: 12px;
+}
+
+.header-second {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  width: 30%;
+}
+
+.profile-card {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  align-items: center;
+}
+#profile1 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.notification img {
+  width: 15px;
+  margin-left: 5rem;
+}
+.profile-card img {
+  width: 10px;
+}
+
+.profile-card h3 {
+  color: rgb(110, 110, 110);
+  font-size: 12px;
+}
+/* grid section begins here */
+.grid-container {
+  display: grid;
+  width: 100%;
+
+  grid-gap: 15px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(180px, 200px);
+}
+
+.grid-item {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(228, 228, 228);
+  border-radius: 10px;
+  max-height: inherit;
+}
+.item1 {
+  grid-column: 1;
+  grid-row: 1;
+  background: linear-gradient(90deg, #9c55fa, #d55ffe);
+  box-shadow: 0px 5px 10px rgba(190, 26, 255, 0.3);
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
+}
+.star-rate span {
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+}
+.card-info h4 {
+  margin-top: 20px;
+  font-size: 10px;
+  color: rgb(214, 144, 144);
+}
+.card-info span {
+  display: flex;
+  justify-content: space-between;
+}
+.card-info span p {
+  font-size: 13px;
+}
+.item2 {
+  grid-column: 2;
+  grid-row: 1;
+  /* width: 50%; */
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.item3 {
+  grid-column: 3;
+  grid-row: 1;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+.item4 {
+  grid-column: 4;
+  grid-row: span 2;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.item6 {
+  grid-column: 3;
+  grid-row: 2 / span 3;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.item5 {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 3;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.item7 {
+  grid-column: 4;
+  grid-row: 3 / span 2;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-bottom: grey;
+}
+/* Table styles */
+table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
+}
+.table-para {
+  font-size: 1.2rem;
+  padding: 10px;
+}
+th,
+td {
+  font-size: 0.6rem;
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+tr:hover {
+  background-color: #d6eeee;
+}
+.tr-1 {
+  background-image: linear-gradient(to right, #ee6d2f, #f38e31);
+  color: #fff;
+}
+.reviews {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  font-size: 10px;
+}
+
+.Reviews-info {
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+  font-size: 9px;
+}
+.Reviews-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.fa-reply {
+  padding-top: 10px;
+  color: rgb(0, 81, 255);
+}
+
+/* Payment History */
+.payment-history {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  /* padding-top: 2px; */
+}
+
+.payment-history h1 {
+  font-size: 15px;
+}
+
+.payment-history .chart-img {
+  margin-left: 30px;
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+.payment-history img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(230, 230, 236);
+  color: #fff;
+  object-fit: cover;
+}
+.payment-captions {
+  margin-top: 1rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.payment-captions p {
+  font-size: 0.7rem;
+}
+
+.payment-captions h3 {
+  font-size: 0.6rem;
+}
+.payment-caption {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  line-height: 1.2rem;
+}
+.payment-caption .price p {
+  font-size: 0.6rem;
+}
+
+/* Item 6 */
+.sphere-graph {
+  margin: 2rem 0;
+}
+.payment-date {
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: #9c55fa;
+  margin-bottom: 1rem;
+}
+.Monthly-Profits {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.Monthly-Profit {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  line-height: 1.2rem;
+}
+.Monthly-Profit p {
+  font-size: 10px;
+}
+.fa-star {
+  display: flex;
+  gap: 60px;
+  font-size: 0.3rem;
+}
+.Monthly-Profits h3 {
+  font-size: 0.6rem;
+}
+.span-card {
+  font-size: 0.7rem;
+}
+.Monthly-text p {
+  font-size: 0.5rem;
+}
